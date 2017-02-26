@@ -235,7 +235,6 @@ main = function(low,high,nstat){
 
 adjacencygraph = function (trees, ha,tip) {
   n <- length(trees)
-  
   # creates the adjacency matrix
   I=numeric(2*n*(tip-2))
   J=numeric(2*n*(tip-2))
@@ -261,7 +260,6 @@ adjacencygraph = function (trees, ha,tip) {
     }
     
   }
-  
   ind=length(which(K==0))
   I=head(I,-ind)
   J=head(J,-ind)
@@ -269,6 +267,3 @@ adjacencygraph = function (trees, ha,tip) {
   adj=sparseMatrix(I,J,x=K)
   return(adj)
 }
-
-
-

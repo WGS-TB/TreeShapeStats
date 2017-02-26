@@ -1,5 +1,3 @@
-
-
 require(combinat)
 require(rARPACK)
 library(igraph)
@@ -482,6 +480,3 @@ adjacencygraph = function (trees, tip) {
   adj=sparseMatrix(I,J,x=K)
   return(adj)
 }
-
-
-

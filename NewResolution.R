@@ -209,7 +209,7 @@ main = function(low,high,nstat){
                         sparse = TRUE)
     
     
-    eyeL=eigs_sym(LM,1,"LM",opts = list(retvec = FALSE), lower=TRUE)
+    eyeL=eigs_sym(LM,1,"LM",opts = list(retvec = FALSE),lower=TRUE)
     eyeS=eigs_sym(LM,2,"SM",opts = list(retvec = FALSE),lower=TRUE)
     VL=eyeL$values[1]
     VS=eyeS$values[1]
@@ -267,6 +267,3 @@ adjacencygraph = function (trees, ha,tip) {
   adj=sparseMatrix(I,J,x=K)
   return(adj)
 }
-
-
-
