@@ -1,2 +1,2 @@
 # TreeShapeStats
-R code to accompany the paper "On optimal combinations of tree shape statistics" by Hayati, Shadgar and Chindelevitch
+R code to accompany the paper "A new resolution function to evaluate tree shape statistics" by Hayati, Shadgar and Chindelevitch
